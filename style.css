@@ -1,0 +1,40 @@
+* {
+  font-family: Montserrat;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.photo {
+  background: url('images/francesco-ungaro-oCL2b3bBWlc-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.header-background img {
+  height: 10vh;
+}
+.header-background h2 {
+  color: #f1f1f1;
+  font-family: arimo;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
