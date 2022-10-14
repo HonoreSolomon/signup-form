@@ -2,7 +2,10 @@
   font-family: Montserrat;
   font-weight: bold;
 }
-
+p {
+  margin: 0;
+  padding: 0;
+}
 body {
   background: #0e0e0e;
   height: 95vh;
@@ -13,15 +16,15 @@ body {
 
 .container {
   display: flex;
-  width: 60%;
-  height: 80%;
+  overflow: hidden;
+  width: 70%;
   background-color: hsl(0, 0%, 90%);
 }
 
 .photo {
-  background: url('images/francesco-ungaro-oCL2b3bBWlc-unsplash.jpg');
+  background: url('images/francesco-ungaro-oCL2b3bBWlc-unsplash.jpg')
+    center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -55,6 +58,7 @@ body {
 .content-text {
   font-size: 1.5rem;
   padding-left: 3rem;
+  margin-top: 7rem;
 }
 
 .formTop {
@@ -74,15 +78,14 @@ fieldset {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 18px;
 }
 fieldset > * {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-}
-
-fieldset > :first-child {
-  margin-right: 4rem;
 }
 
 input {
@@ -91,7 +94,7 @@ input {
   width: 250px;
   padding: 0.5rem;
 }
-input:focus {
+input:selected {
   border: 2px solid #169f85;
   box-shadow: 11px 16px 31px -18px rgba(0, 0, 0, 0.79);
 }
@@ -117,9 +120,14 @@ input:focus {
   margin-left: 3rem;
   font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 7rem;
 }
 
 .login-container > p > a {
   color: #169f85;
   text-decoration: none;
+}
+
+.error {
+  border: 2px solid red;
 }

@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="normalizecpy.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -58,6 +59,8 @@
                   type="text"
                   id="firstName"
                   name="firstName"
+                  required
+                  placeholder="John"
                 />
               </div>
               <!-- /.firstName-container -->
@@ -68,6 +71,8 @@
                   type="text"
                   id="lastName"
                   name="lastName"
+                  required
+                  placeholder="Doe"
                 />
               </div>
               <!-- /.lastName-container -->
@@ -81,6 +86,8 @@
                   type="email"
                   name="email"
                   id="email"
+                  required
+                  placeholder="your@email.com"
                 />
               </div>
               <!-- /.email-container -->
@@ -90,6 +97,10 @@
                   type="number"
                   name="phoneNumber"
                   id="phoneNumber"
+                  required
+                  maxlength="10"
+                  minlength="10"
+                  placeholder="459-344-3823"
                 />
               </div>
               <!-- /.phoneNumber-container -->
@@ -114,6 +125,7 @@
                   type="password"
                   id="passwordConfirmation"
                   name="passwordConfirmation"
+                  required
                 />
               </div>
               <!-- /.passwordConfirmation-container -->
